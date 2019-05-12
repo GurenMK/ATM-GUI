@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="withdrawDeny" prefHeight="940.0" prefWidth="980.0" stylesheets="@atm.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atm.Controller">
+    <children>
+        <Label layoutX="393.0" layoutY="37.0" styleClass="heading2" text="Withdraw" />
+        <Button fx:id="backBtn" layoutX="62.0" layoutY="110.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="128.0" styleClass="backBtn" text="Back">
+            <effect>
+                <DropShadow />
+            </effect></Button>
+      <Label layoutX="230.0" layoutY="340.0" styleClass="heading3" text="You have reached your daily" />
+      <Label layoutX="329.0" layoutY="396.0" styleClass="heading3" text="withdrawal limit" />
+      <GridPane layoutX="78.0" layoutY="478.0" prefHeight="61.0" prefWidth="897.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="827.0" minWidth="10.0" prefWidth="678.0" />
+          <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="247.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="62.0" styleClass="heading4" text="$labelText" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin></Label>
+            <Label prefHeight="62.0" prefWidth="677.0" styleClass="heading4" text="Amount available for withdrawal:">
+               <GridPane.margin>
+                  <Insets left="60.0" />
+               </GridPane.margin></Label>
+         </children>
+      </GridPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,131 @@
+.root {
+    -fx-background-color: linear-gradient(to left bottom, rgb(124,72,138) 0%, rgb(58,29,67) 50%, rgb(40,15,45) 75%);
+}
+
+#welcome {
+    -fx-background-image: url("https://images.unsplash.com/photo-1533421644343-45b606745fb1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=02b2e8f610cf7009cca61156aa73d09d&auto=format&fit=crop&w=2000&q=80");
+    -fx-background-size: cover;
+}
+
+.label {
+    -fx-text-fill: rgb(253,207,56);
+    -fx-font-size: 34px;
+    -fx-font-weight: 700;
+}
+
+.heading1 {
+    -fx-text-fill: rgb(253,237,56);
+    -fx-font-size: 38px;
+    -fx-font-weight: 900;
+    -fx-alignment: center;
+}
+.button {
+    -fx-font-size: 3em;
+    -fx-font-weight: 700;
+    -fx-background-color: rgb(49,144,243);
+    -fx-text-fill: rgb(233,234,230);
+    -fx-background-radius: 15px;
+}
+
+.text-field {
+    -fx-font-size: 40px;
+}
+
+/*Home fxml*/
+
+#home {
+    -fx-background-color: linear-gradient(to left bottom, rgb(124,72,138) 0%, rgb(58,29,67) 50%, rgb(40,15,45) 75%);
+}
+
+#home_box1 {
+    -fx-font-size: 1.3em;
+}
+
+#logoutBtn {
+    -fx-font-size: 2.3em;
+}
+
+.numpad {
+    -fx-border-radius: 5;
+    -fx-border-color: rgb(233,234,230);
+}
+
+.numpadCancel {
+    -fx-background-color: rgb(229,50,50);
+    -fx-text-fill: rgb(0,0,0);
+}
+
+.numpadClear {
+    -fx-background-color: rgb(253,217,56);
+    -fx-text-fill: rgb(0,0,0);
+}
+
+.numpadSignIn {
+    -fx-background-color: rgb(49,234,123);
+    -fx-text-fill: rgb(0,0,0);
+}
+
+/*Balance fxml*/
+
+#balance {
+    -fx-background-color: linear-gradient(to left bottom, rgb(124,72,138) 0%, rgb(58,29,67) 50%, rgb(40,15,45) 75%);
+}
+
+.heading2 {
+    -fx-text-fill: rgb(253,237,56);
+    -fx-font-size: 50px;
+    -fx-font-weight: 900;
+    -fx-alignment: center;
+}
+
+.backBtn {
+    -fx-font-size: 3em;
+    -fx-font-weight: 700;
+    -fx-background-color: rgb(209,60,60);
+    -fx-text-fill: rgb(245,245,245);
+    -fx-background-radius: 15px;
+}
+
+.label2 {
+    -fx-text-fill: rgb(0,0,0);
+    -fx-font-size: 34px;
+    -fx-font-weight: 700;
+    -fx-background-color: rgb(250,250,250);
+    -fx-background-radius: 5px;
+}
+
+/*Withdraw fxml*/
+#withdraw {
+    -fx-background-color: linear-gradient(to left bottom, rgb(124,72,138) 0%, rgb(58,29,67) 50%, rgb(40,15,45) 75%);
+}
+
+.withdrawAmount {
+    -fx-background-radius: 30px;
+}
+
+.heading3 {
+    -fx-font-size: 42px;
+    -fx-font-weight: 700;
+    -fx-text-fill: rgb(250,250,250);
+}
+
+/*Withdraw Deny fxml*/
+#withdrawDeny {
+    -fx-background-color: linear-gradient(to left bottom, rgb(124,72,138) 0%, rgb(58,29,67) 50%, rgb(40,15,45) 75%);
+}
+
+.heading4 {
+    -fx-font-size: 38px;
+    -fx-font-weight: 700;
+    -fx-text-fill: rgb(250,250,250);
+}
+
+/*Deposit fxml*/
+#deposit {
+    -fx-background-color: linear-gradient(to left bottom, rgb(124,72,138) 0%, rgb(58,29,67) 50%, rgb(40,15,45) 75%);
+}
+
+/*Transfer fxml*/
+#transfer {
+    -fx-background-color: linear-gradient(to left bottom, rgb(124,72,138) 0%, rgb(58,29,67) 50%, rgb(40,15,45) 75%);
+}

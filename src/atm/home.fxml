@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="home" prefHeight="940.0" prefWidth="980.0" stylesheets="@atm.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atm.Controller">
+   <children>
+      <VBox fx:id="home_box1" layoutX="92.0" layoutY="172.0" spacing="50.0">
+         <children>
+            <Button fx:id="balanceBtn" layoutX="93.0" layoutY="107.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="135.0" prefWidth="447.0" text="Balance">
+               <font>
+                  <Font size="38.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="withdrawBtn" layoutX="93.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="135.0" prefWidth="447.0" text="Withdraw">
+               <font>
+                  <Font size="38.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="depositBtn" layoutX="93.0" layoutY="488.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="135.0" prefWidth="447.0" text="Deposit">
+               <font>
+                  <Font size="38.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="transferBtn" layoutX="93.0" layoutY="673.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="135.0" prefWidth="447.0" text="Transfer">
+               <font>
+                  <Font size="38.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+         </children>
+      </VBox>
+      <Button fx:id="logoutBtn" layoutX="777.0" layoutY="32.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="66.0" prefWidth="158.0" text="Sign Out">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="deposit" prefHeight="940.0" prefWidth="980.0" stylesheets="@atm.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atm.Controller">
+    <children>
+        <Label layoutX="399.0" layoutY="37.0" styleClass="heading2" text="Deposit" />
+        <Button fx:id="backBtn" layoutX="62.0" layoutY="110.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="128.0" styleClass="backBtn" text="Back">
+            <effect>
+                <DropShadow />
+            </effect></Button>
+    </children>
+</AnchorPane>

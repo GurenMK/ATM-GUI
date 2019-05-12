@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="withdrawReceipt" prefHeight="940.0" prefWidth="980.0" stylesheets="@atm.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atm.Controller">
+    <children>
+        <Label layoutX="374.0" layoutY="37.0" styleClass="heading2" text="Withdraw" />
+        <Button fx:id="backBtn" layoutX="62.0" layoutY="110.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="128.0" styleClass="backBtn" text="Back">
+            <effect>
+                <DropShadow />
+            </effect></Button>
+      <Label styleClass="heading3" layoutX="353.0" layoutY="285.0" text="Print Receipt?" />
+      <GridPane layoutX="262.0" layoutY="399.0" prefHeight="124.0" prefWidth="456.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="printNo" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="140.0" text="No">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="printYes" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="140.0" text="Yes" GridPane.columnIndex="1">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+         </children>
+      </GridPane>
+    </children>
+</AnchorPane>

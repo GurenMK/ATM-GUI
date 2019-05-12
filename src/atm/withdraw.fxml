@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="withdraw" prefHeight="940.0" prefWidth="980.0" stylesheets="@atm.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atm.Controller">
+    <children>
+        <Label layoutX="374.0" layoutY="37.0" styleClass="heading2" text="Withdraw" />
+        <Button fx:id="backBtn" layoutX="62.0" layoutY="110.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="128.0" styleClass="backBtn" text="Back">
+            <effect>
+                <DropShadow />
+            </effect></Button>
+      <GridPane layoutX="151.0" layoutY="320.0" prefHeight="428.0" prefWidth="678.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="withdraw1" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="70.0" prefWidth="270.0" styleClass="withdrawAmount" text="\$1">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Button fx:id="withdraw15" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="70.0" prefWidth="270.0" styleClass="withdrawAmount" text="\$15" GridPane.columnIndex="1">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Button fx:id="withdraw5" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="70.0" prefWidth="270.0" styleClass="withdrawAmount" text="\$5" GridPane.rowIndex="1">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Button fx:id="withdraw100" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="70.0" prefWidth="270.0" styleClass="withdrawAmount" text="\$100" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Button fx:id="withdraw10" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="70.0" prefWidth="270.0" styleClass="withdrawAmount" text="\$10" GridPane.rowIndex="2">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Button fx:id="withdrawOtherBtn" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="70.0" prefWidth="270.0" styleClass="withdrawAmount" text="Other " GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+         </children>
+      </GridPane>
+    </children>
+</AnchorPane>

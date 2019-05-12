@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="withdrawOther" prefHeight="940.0" prefWidth="980.0" stylesheets="@atm.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atm.Controller">
+    <children>
+        <Label layoutX="393.0" layoutY="37.0" styleClass="heading2" text="Withdraw" />
+        <Button fx:id="backBtn" layoutX="62.0" layoutY="110.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="128.0" styleClass="backBtn" text="Back">
+            <effect>
+                <DropShadow />
+            </effect></Button>
+      <GridPane layoutX="259.0" layoutY="426.0" prefHeight="353.0" prefWidth="463.0" styleClass="numpad">
+         <children>
+            <Button fx:id="withdrawNum7" mnemonicParsing="false" onAction="#processNumPad" prefHeight="65.0" prefWidth="65.0" text="7">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="withdrawNum8" mnemonicParsing="false" onAction="#processNumPad" prefHeight="65.0" prefWidth="65.0" text="8" GridPane.columnIndex="1" />
+            <Button fx:id="withdrawNum4" mnemonicParsing="false" onAction="#processNumPad" prefHeight="65.0" prefWidth="65.0" text="4" GridPane.rowIndex="1" />
+            <Button fx:id="withdrawNum5" mnemonicParsing="false" onAction="#processNumPad" prefHeight="65.0" prefWidth="65.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="withdrawNum1" mnemonicParsing="false" onAction="#processNumPad" prefHeight="65.0" prefWidth="65.0" text="1" GridPane.rowIndex="2" />
+            <Button fx:id="withdrawNum2" mnemonicParsing="false" onAction="#processNumPad" prefHeight="65.0" prefWidth="65.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="withdrawNum9" mnemonicParsing="false" onAction="#processNumPad" prefHeight="65.0" prefWidth="65.0" text="9" GridPane.columnIndex="2" />
+            <Button fx:id="withdrawNum6" mnemonicParsing="false" onAction="#processNumPad" prefHeight="65.0" prefWidth="65.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="withdrawNum3" mnemonicParsing="false" onAction="#processNumPad" prefHeight="65.0" prefWidth="65.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="withdrawNum0" mnemonicParsing="false" onAction="#processNumPad" prefHeight="65.0" prefWidth="65.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="withdrawEnter" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="160.0" styleClass="numpadSignIn" text="Enter" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Button fx:id="withdrawCancel" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="65.0" prefWidth="140.0" styleClass="numpadCancel" text="Cancel" GridPane.columnIndex="4" />
+            <Button fx:id="withdrawClear" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="65.0" prefWidth="140.0" styleClass="numpadClear" text="Clear" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="5.0" minWidth="0.0" prefWidth="0.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="198.0" minWidth="10.0" prefWidth="198.0" />
+         </columnConstraints>
+         <effect>
+            <DropShadow />
+         </effect>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Label fx:id="conformation" layoutX="239.0" layoutY="231.0" styleClass="heading3" text="Enter withdrawal amount" />
+      <TextField fx:id="withdrawalAmount" layoutX="319.0" layoutY="309.0" prefHeight="73.0" prefWidth="344.0" />
+    </children>
+</AnchorPane>
